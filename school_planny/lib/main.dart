@@ -9,13 +9,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'School Planny App v1.0',
       theme: ThemeData(
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
         // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
+        // changing the primarySwachannechanntch below to Colors.green and then invoke
         // "hot reload" (press "r" in the console where you ran "flutter run",
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
@@ -26,13 +26,29 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'SchoolPlanny'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
+  const CupertinoSliverNavigationBar(
+      {Key key,
+        Widget largeTitle,
+        Widget leading,
+        bool automaticallyImplyLeading: true,
+        bool automaticallyImplyTitle: true,
+        String previousPageTitle,
+        Widget middle,
+        Widget trailing,
+        Border border: _kDefaultNavBarBorder,
+        Color backgroundColor,confgi
+        EdgeInsetsDirectional padding,
+        Color actionsForegroundColor,
+        bool transitionBetweenRoutes: true,
+        Object heroTag: _defaultHeroTag}
+      )
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
